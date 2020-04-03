@@ -2,24 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3ffb031-9b9a-4557-bdf0-9422e549df79" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Countries.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CurruntCountry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Graph.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/IntMap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/WorldInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/687851-200.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Countries.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Countries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CurruntCountry.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CurruntCountry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/IntMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IntMap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WorldInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WorldInfo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +48,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -93,50 +93,75 @@
       <updated>1584741247933</updated>
       <workItem from="1584741254687" duration="27504000" />
       <workItem from="1584831428252" duration="4508000" />
-      <workItem from="1584882708247" duration="22453000" />
+      <workItem from="1584882708247" duration="24101000" />
+      <workItem from="1584917751153" duration="7219000" />
+      <workItem from="1584992789323" duration="1340000" />
+      <workItem from="1585151565906" duration="590000" />
+      <workItem from="1585164243447" duration="5062000" />
+      <workItem from="1585849954823" duration="9299000" />
+      <workItem from="1585921519149" duration="5903000" />
     </task>
+    <task id="LOCAL-00001" summary="project">
+      <created>1584914730882</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584914730882</updated>
+    </task>
+    <task id="LOCAL-00002" summary="project">
+      <created>1584914792625</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584914792625</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="project" />
+    <option name="LAST_COMMIT_MESSAGE" value="project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584913656694">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1584913656694" />
-    <state x="314" y="52" key="CommitChangelistDialog2" timestamp="1584914730365">
+    <state x="314" y="52" key="CommitChangelistDialog2" timestamp="1584914792439">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="314" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1584914730365" />
+    <state x="314" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1584914792439" />
     <state x="587" y="350" key="Github.ShareDialog" timestamp="1584914769291">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="587" y="350" key="Github.ShareDialog/0.0.1440.900@0.0.1440.900" timestamp="1584914769291" />
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1584913982720">
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1585925059431">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584913982720" />
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585925059431" />
     <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584880778101" />
-    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1584913982718">
+    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1585925059430">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584913982718" />
+    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585925059430" />
     <state width="1419" height="245" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1584880778095" />
-    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1584913982717">
+    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1585925059429">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584913982717" />
+    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585925059429" />
     <state width="1419" height="245" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1584880778070" />
-    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1584913982719">
+    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1585925059431">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584913982719" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585925059431" />
     <state width="1419" height="245" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1584880778096" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1584914741815">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1584914806147">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1584914741815" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1584914806147" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1584813453190">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

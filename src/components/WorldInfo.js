@@ -13,7 +13,6 @@ class WorldInfo extends React.Component {
                 recovered: ''
             }
         }
-
     }
 
     componentDidMount() {
@@ -28,28 +27,25 @@ class WorldInfo extends React.Component {
                     }
                 });
             });
-        fetch('')
     }
 
     render() {
         return (
             <div className='world container-fluid'>
-                <div className='d-flex flex-row'>
-                    <div className='d-flex flex-column flex-fill align-items-center'>
-                        <div className='flex-row'>Coronavirus cases</div>
-                        <div className='flex-row'>{this.state.worldInfo.cases}</div>
+                <div className='row'>
+                    <div className='col-sm-4 align-items-center'>
+                        <div className='row justify-content-center'>Coronavirus cases</div>
+                        <div className='row justify-content-center'>{this.state.worldInfo.cases}</div>
                     </div>
-                    <div className='deaths d-flex flex-column flex-fill align-items-center'>
-                        <div className='flex-row'>Deaths</div>
-                        <div className='flex-row'>{this.state.worldInfo.deaths}</div>
+                    <div className='deaths col-sm-4 align-items-center'>
+                        <div className='row justify-content-center'>Deaths</div>
+                        <div className='row justify-content-center'>{this.state.worldInfo.deaths}</div>
                     </div>
-                    <div className='recovered d-flex flex-column flex-fill align-items-center'>
-                        <div className='flex-row'>Recovered</div>
-                        <div className='flex-row'>{this.state.worldInfo.recovered}</div>
+                    <div className='recovered col-sm-4 justify-content-center'>
+                        <div className='row justify-content-center'>Recovered</div>
+                        <div className='row justify-content-center'>{this.state.worldInfo.recovered}</div>
                     </div>
-
                 </div>
-
             </div>
         )
     }

@@ -16,9 +16,6 @@ const Header = () => {
                         <Nav.Link href='search'>Search</Nav.Link>
                         <Nav.Link href='map'>Map</Nav.Link>
                     </Nav>
-                    <Nav>
-                        <Nav.Link href="world">Corona Online</Nav.Link>
-                    </Nav>
                 </Navbar.Collapse>
             </Navbar>
         </header>

@@ -35,20 +35,20 @@ const CurrentCountry = (props) => {
     }
     let info = <div className='box container-fluid'>
         <div className='d-flex justify-content-center'></div>
-        <div className='country d-flex flex-row'>
-            <div className='d-flex flex-column w-25 align-items-center'>
+        <div className='country row align-items-center'>
+            <div className='col-sm-3 align-items-center'>
                 <div className='land d-flex flex-row'>{count}
                 </div>
             </div>
-            <div className='d-flex flex-column w-25 align-items-center'>
+            <div className='col-sm-3 align-items-center'>
                 <div className='d-flex flex-row'>Cases: {cases}</div>
                 <div className='d-flex flex-row'>Today: {todayCases} </div>
             </div>
-            <div className='d-flex flex-column w-25 align-items-center'>
+            <div className='col-sm-3 align-items-center'>
                 <div className='d-flex flex-row'>Active: {active}</div>
                 <div className='d-flex flex-row'>Deaths: {deaths} </div>
             </div>
-            <div className='d-flex flex-column w-25 align-items-center'>
+            <div className='col-sm-3 align-items-center'>
                 <div className='d-flex flex-row'>Recovered: {recovered}</div>
                 <div className='d-flex flex-row'>Critical: {critical} </div>
             </div>

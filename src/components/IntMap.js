@@ -26,19 +26,24 @@ class M extends React.Component {
             .then(json => {
                 this.setState({coronaInfo: JSON.parse(JSON.stringify(json))})
             })
-        const listener = e => {
-            if(e.key === "Escape") {
-                this.setState({selectCounty: null});
-            }
-        };
-        window.addEventListener("keydown", listener);
+        window.addEventListener("keydown", this.listener);
+    }
 
+    componentWillUnmount() {
+        window.removeEventListener("keydown", this.listener);
+    }
+
+    listener = e => {
+        if (e.key === "Escape") {
+            this.setState({selectCounty: null});
+        }
     }
 
     render() {
         if (this.state.coronaInfo.locations) {
             const info = this.state.coronaInfo;
             const arr = info.locations[0];
+            console.log(info.locations);
             return (
                 <div>
                     <ReactMapGL
@@ -75,7 +80,7 @@ class M extends React.Component {
                                     <h3>{this.state.selectCountry.province}</h3>
                                     <p>Confirmed: {this.state.selectCountry.latest.confirmed} <br/>
                                         Deaths: {this.state.selectCountry.latest.deaths} <br/>
-                                        Recovered: {this.state.selectCountry.latest.recovered}</p>
+                                    </p>
                                 </div>
                             </Popup>
                         ) : null}
@@ -90,30 +95,5 @@ class M extends React.Component {
         }
     }
 }
-
-
-// const IntMap = () => {
-//     const [viewport, setViewport] = useState({
-//         latitude: 37.785164,
-//         longitude: -100,
-//         width: '98vw',
-//         height: '90vh',
-//         zoom: 1
-//
-//     });
-//
-//
-//     return (
-//         <div >
-//             <ReactMapGL
-//                 {...viewport}
-//                 mapboxApiAccessToken={API_KEY}
-//                 mapStyle="mapbox://styles/razent/ck8358lcn0uct1is00calvoq4"
-//                 onViewportChange ={(viewport) => {setViewport(viewport)}}
-//             >
-//             </ReactMapGL>
-//         </div>
-//     )
-// }
 
 export default M;

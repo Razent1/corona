@@ -1,11 +1,9 @@
 import React from "react";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import WorldInfo from "./WorldInfo";
-import {Router} from "react-router";
 import Countries from "./Countries";
 import Graph from "./Graph";
 import Search from "./Search";
-import gMap from "./Map";
 import IntMap from "./IntMap";
 
 

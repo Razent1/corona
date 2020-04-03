@@ -1,4 +1,3 @@
-import SearchField from "react-search-field";
 import React from "react";
 
 class Search extends React.Component {
@@ -60,7 +59,7 @@ class Search extends React.Component {
         const infoBlock = this.state.countryInfo;
         if(infoBlock.country === ''){
             return(
-            <form className='frm d-flex justify-content-center' onSubmit={this.getCountry}>
+            <form className='frm row justify-content-center' onSubmit={this.getCountry}>
                 <input type="text" placeholder='Country' name='country'/>
                 <button type='submit'>Show</button>
             </form>
@@ -69,24 +68,24 @@ class Search extends React.Component {
         else {
             return (
                 <div className='box container-fluid'>
-                    <form className='frm d-flex justify-content-center' onSubmit={this.getCountry}>
+                    <form className='frm row justify-content-center' onSubmit={this.getCountry}>
                         <input type="text" placeholder='Country' name='country'/>
                         <button type='submit'>Show</button>
                     </form>
-                    <div className='country d-flex flex-row'>
-                        <div className='d-flex flex-column w-25 align-items-center'>
+                    <div className='country row align-items-center'>
+                        <div className='col-sm-3 align-items-center'>
                             <div className='land d-flex flex-row'>{infoBlock.country}
                             </div>
                         </div>
-                        <div className='d-flex flex-column w-25 align-items-center'>
+                        <div className='col-sm-3 align-items-center'>
                             <div className='d-flex flex-row'>Cases: {infoBlock.cases}</div>
                             <div className='d-flex flex-row'>Today: {infoBlock.todayCases} </div>
                         </div>
-                        <div className='d-flex flex-column w-25 align-items-center'>
+                        <div className='col-sm-3 align-items-center'>
                             <div className='d-flex flex-row'>Active: {infoBlock.active}</div>
                             <div className='d-flex flex-row'>Deaths: {infoBlock.deaths} </div>
                         </div>
-                        <div className='d-flex flex-column w-25 align-items-center'>
+                        <div className='col-sm-3 align-items-center'>
                             <div className='d-flex flex-row'>Recovered: {infoBlock.recovered}</div>
                             <div className='d-flex flex-row'>Critical: {infoBlock.critical} </div>
                         </div>
