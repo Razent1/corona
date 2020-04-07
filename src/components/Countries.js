@@ -6,6 +6,8 @@ import {faSortDown} from '@fortawesome/free-solid-svg-icons';
 import {css} from "@emotion/core";
 import {PulseLoader} from "react-spinners";
 
+
+
 const options = ['Cases', 'Today', 'Active', 'Deaths', 'Recovered', 'Critical'];
 const sortIcon = <FontAwesomeIcon icon={faSortDown}/>;
 const override = css`

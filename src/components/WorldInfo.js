@@ -1,6 +1,10 @@
 import React from "react";
 import Graph from "./Graph";
 
+const { NovelCovid } = require('novelcovid');
+
+const track = new NovelCovid();
+
 class WorldInfo extends React.Component {
 
     constructor(props) {

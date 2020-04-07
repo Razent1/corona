@@ -4,6 +4,12 @@ html body {
     font-size: x-large;
     color: gray;
 }
+@media (max-width: 500px) {
+    .imgCountry img {
+        display: none;
+    }
+}
+
 select {
     text-decoration: white;
     background-color: black;
@@ -17,11 +23,7 @@ select {
         display: none;
     }
 }
-@media (max-width: 500px) {
-    .imgCountry img {
-        display: none;
-    }
-}
+
 .country {
     margin-top: 1em;
     border: 1px solid gray;
@@ -74,5 +76,24 @@ button {
     left: 50%;
 }
 
+.myGraph {
+    /*-webkit-box-sizing: border-box;*/
+    /*-moz-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
+    position: absolute;
+    top: 25%;
+}
+
+.myGraph2 {
+    width: 100%;
+}
+.recharts-wrapper svg {
+    width: 100%;
+
+}
+.recharts-wrapper{
+    width: 100% !important;
+
+}
 
 

@@ -1,7 +1,15 @@
 import React, {useState} from "react";
 import ReactMapGL, {Marker, Popup} from "react-map-gl";
+import {css} from "@emotion/core";
+import {PulseLoader} from "react-spinners";
 
 const API_KEY = 'pk.eyJ1IjoicmF6ZW50IiwiYSI6ImNrODMzdzJvcDAyOXEzb281YnBtODhyd3oifQ.ql8oHBO18V6ryiFHeYqxVQ';
+
+const override = css`
+  display: block;
+  margin: 0 auto;
+  border-color: red;
+`;
 
 class M extends React.Component {
     constructor(props) {
@@ -21,7 +29,7 @@ class M extends React.Component {
     }
 
     componentDidMount() {
-        fetch('https://coronavirus-tracker-api.herokuapp.com/v2/locations')
+        fetch('https://corona.lmao.ninja/yesterday?sort=cases')
             .then(response => response.json())
             .then(json => {
                 this.setState({coronaInfo: JSON.parse(JSON.stringify(json))})
@@ -40,10 +48,8 @@ class M extends React.Component {
     }
 
     render() {
-        if (this.state.coronaInfo.locations) {
+        if (this.state.coronaInfo[0]) {
             const info = this.state.coronaInfo;
-            const arr = info.locations[0];
-            console.log(info.locations);
             return (
                 <div>
                     <ReactMapGL
@@ -54,10 +60,10 @@ class M extends React.Component {
                             this.setState({viewport: viewport})
                         }}
                     >
-                        {info.locations.map((count, index, arr) =>
+                        {info.map((count, index, arr) =>
                             (
-                                <Marker key={count.id} latitude={parseFloat(count.coordinates.latitude)}
-                                        longitude={parseFloat(count.coordinates.longitude)}>
+                                <Marker key={index} latitude={parseFloat(count.countryInfo.lat)}
+                                        longitude={parseFloat(count.countryInfo.long)}>
                                     <button className='marker-btn' onClick={(e) => {
                                         e.preventDefault();
                                         this.setState({selectCountry: count});
@@ -69,17 +75,21 @@ class M extends React.Component {
                             )
                         )}
                         {this.state.selectCountry ? (
-                            <Popup latitude={parseFloat(this.state.selectCountry.coordinates.latitude)}
-                                   longitude={parseFloat(this.state.selectCountry.coordinates.longitude)}
+                            <Popup latitude={parseFloat(this.state.selectCountry.countryInfo.lat)}
+                                   longitude={parseFloat(this.state.selectCountry.countryInfo.long)}
                                    onClose={() => {
                                        this.setState({selectCountry: null});
                                    }}
                             >
                                 <div>
-                                    <h2>{this.state.selectCountry.country}</h2>
-                                    <h3>{this.state.selectCountry.province}</h3>
-                                    <p>Confirmed: {this.state.selectCountry.latest.confirmed} <br/>
-                                        Deaths: {this.state.selectCountry.latest.deaths} <br/>
+                                    <h2>{this.state.selectCountry.country} <img
+                                        src={this.state.selectCountry.countryInfo.flag} width='100px' height='50px' alt=""/>
+                                    </h2>
+                                    {/*<h3>{this.state.selectCountry.province}</h3>*/}
+                                    <p>Confirmed: {this.state.selectCountry.cases} <br/>
+                                        Today Cases: {this.state.selectCountry.todayCases} <br/>
+                                        Deaths: {this.state.selectCountry.deaths} <br/>
+                                        Recovered: {this.state.selectCountry.recovered} <br/>
                                     </p>
                                 </div>
                             </Popup>
@@ -90,7 +100,12 @@ class M extends React.Component {
             )
         } else {
             return (
-                <div></div>
+                <div className='loader'><PulseLoader
+                    css={override}
+                    size={20}
+                    color={"white"}
+                    loading={this.state.loading}
+                /></div>
             )
         }
     }
